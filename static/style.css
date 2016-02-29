@@ -1,3 +1,14 @@
+body {
+  background-color: #323232;
+  color: #f0f0f0;
+}
 #stats {
-  margin: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: -10px;
+  text-align: center;
 }
