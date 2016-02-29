@@ -14,11 +14,11 @@ release = platform.release()
 # Operating System Print
 os1 = 'OS: ' + osprint
 os2 = 'Release: ' + release
-os = os1 + '<br>' + os2 + '<br>'
+os = os1 + '<br>' + os2
 
 # Hostname
 hostname = platform.node()
-host = 'Hostname : ' + hostname + '<br>'
+host = 'Hostname : ' + hostname
 
 # Memory Variables
 mem = psutil
@@ -32,7 +32,7 @@ RAM1 = 'Total RAM: ' + str(round(total)) + 'MB<br>'
 RAM2 = 'Used RAM: ' + str(round(used)) + 'MB<br>'
 RAM3 = 'Free RAM: ' + str(round(free)) + 'MB<br>'
 RAM4 = 'Available RAM: ' + str(round(available)) + 'MB<br>'
-RAM5 = 'RAM: ' + str(per) + '%<br>'
+RAM5 = 'RAM: ' + str(per) + '%'
 RAM = RAM1 + RAM2 + RAM3 + RAM4 + RAM5
 
 # CPU Variables
@@ -40,7 +40,7 @@ cpu = psutil
 percent = cpu.cpu_percent()
 count = cpu.cpu_count()
 processor1 = 'CPU usage: ' + str(round(percent)) + '%<br>'
-processor2 = 'CPU count: ' + str(round(count)) + '%<br>'
+processor2 = 'CPU count: ' + str(round(count)) + '%'
 processor = processor1 + processor2
 
 # Flask

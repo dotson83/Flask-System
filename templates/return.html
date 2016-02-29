@@ -1,3 +1,16 @@
 <!DOCTYPE html>
-<title>Usage</title>
-<p class="os">{{ os|safe }}</p>
+<html lang=en>
+<head>
+   <title>Usage</title>
+   <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+  <div id="stats">
+   <p class="os">{{ os|safe }}</p>
+   <p class="host">{{ host|safe }}</p>
+   <p class="RAM">{{ RAM|safe }}</p>
+   <p class="processor">{{ processor|safe }}</p>
+  </div>
+</body>
+</html>
