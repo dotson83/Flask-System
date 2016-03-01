@@ -14,6 +14,7 @@ hostname = platform.node()
 # Memory Variables
 virtual = psutil.virtual_memory()
 memory = str(float(virtual.percent)) + '%'
+memoryp = str(float(virtual.percent))
 
 # CPU Variables
 cpu = psutil
@@ -25,7 +26,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def site():
-  return render_template('return.html', os=os, release=release, memory=memory, host=hostname, processor=processor)
+  return render_template('return.html', os=os, release=release, memoryp=memoryp, memory=memory, host=hostname, processor=processor)
 
 if __name__ == '__main__':
   app.run(port=9111)

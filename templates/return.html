@@ -3,6 +3,8 @@
 <head>
    <title>Usage</title>
    <link rel="stylesheet" type="text/css" href="/static/style.css">
+   <link rel="stylesheet" type="text/css" href="/static/semantic.min.css">
+   <link rel="stylesheet" type="text/css" href="/static/progress.min.css">
 </head>
 
 <body>
@@ -12,6 +14,9 @@
    <p class="release"><strong>Release</strong>: {{ release }}</p>
    <p class="host"><strong>Hostname</strong>: {{ host }}</p>
    <p class="memory"><strong>RAM usage</strong>: {{ memory }}</p>
+      <div class="ui progress" data-percent="{{ memoryp }}">
+         <div class="bar"></div>
+      </div>
    <p class="processor"><strong>CPU usage</strong>: {{ processor }}</p>
   </div>
 </body>
