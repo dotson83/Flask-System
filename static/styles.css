@@ -7,23 +7,17 @@ body {
 
 * {
   font-family: Lato, sans-serif;
-}
-
-#stats {
-  margin-left: 100px !important;
-  margin-right: 100px !important;
   text-align: center !important;
 }
 
-.ui, .progress {
+.progress {
   margin-left: 200px !important;
   margin-right: 200px !important;
 
 .title {
-  margin-top: 9px !important;
-  text-align: center !important;
+  margin-top: 10px !important;
 }
 
 .os, .release, .host, .memory, .processor {
-  line-height: 14px !important;
+  line-height: 13px !important;
 }
