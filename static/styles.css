@@ -15,6 +15,10 @@ body {
   text-align: center !important;
 }
 
+.ui, .progress {
+  margin-left: 200px !important;
+  margin-right: 200px !important;
+
 .title {
   margin-top: 9px !important;
   text-align: center !important;
